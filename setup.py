@@ -16,5 +16,6 @@ setup(
     license='',
     author='Bryan Weinstein',
     author_email='bweinstein@seas.harvard.edu',
-    description='For AC274, teaching students my python workflow'
+    description='For AC274, teaching students my python workflow',
+    ext_modules=cythonize(extensions, annotate=True)
 )
